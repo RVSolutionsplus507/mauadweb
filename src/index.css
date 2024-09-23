@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 255, 255, 255;
+  --foreground: 0, 0, 0;
+}
+.dark {
+  --background: 22, 22, 24; /* #161618 */
+  --foreground: 255, 237, 132; /* #ffed84 */
+  --gradient-start: 27, 27, 31; /* #1b1b1f */
+  --gradient-end: 255, 208, 90; /* #ffd05a */
+  --text-default: 255, 255, 255; /* #ffffff */
+}
+
+body.dark-mode {
+  background: linear-gradient(135deg, rgb(var(--foreground)), rgb(var(--gradient-end)));
+  color: var(--gradient-start);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.blue {
+  --background: 0, 0, 255;
+  --foreground: 255, 255, 255;
+}
+
+body {
+  background-color: rgb(var(--background));
+  color: rgb(var(--text-default));
+}
+
+@keyframes drawUnderline {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
