@@ -12,8 +12,8 @@ export default function ServicesPage() {
         }}
         aria-hidden="true"
       />
-      <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl lg:text-5xl font-bold text-center mb-12">Our Legal Services</h1>
+      <div className="mx-auto px-4 py-16">
+        <h1 className="text-4xl lg:text-5xl font-bold text-center mb-32">Our Legal Services</h1>
         <div className="flex flex-col items-center">
           <div className="w-full mb-12 hidden lg:block">
             <Carousel />

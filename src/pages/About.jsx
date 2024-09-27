@@ -3,6 +3,7 @@ import { FaBalanceScale, FaHandshake, FaGavel } from 'react-icons/fa'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import mauadabout from '../assets/mauadabout.jpg'
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -37,22 +38,54 @@ const sliderSettings = {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 to-slate-700 text-white">
-      <header className="text-[#161618] py-6">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold">About Our Law Firm</h1>
-        </div>
-      </header>
-
-      <main className="container mx-auto px-4 py-12">
-        <motion.section 
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 to-zinc-800 text-white">
+      <section className="container mx-auto px-4 py-12">
+        <motion.section
+          initial="initial"
+          animate="animate"
+          variants={staggerChildren}
+          className="mb-16"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <motion.div
+              variants={fadeIn}
+            >
+              <h2 className="text-4xl font-bold tracking-tight text-amber-300 sm:text-6xl mb-5">
+                Mauad & Mauad
+              </h2>
+              <p className="text-lg mb-4">
+                Established in 1994, Mauad & Mauad has been dedicated to providing top-notch legal services
+                to our clients. Our team of experienced attorneys is committed to upholding the principles of
+                justice and integrity. We specialize in various areas of law, ensuring that we can meet the diverse
+                needs of our clients.
+              </p>
+              <p className="text-lg">
+                Our firm is built on a foundation of trust, excellence, and a relentless pursuit of justice. We
+                believe in a client-centered approach, where each case is handled with the utmost care and
+                professionalism. Join us as we continue to make a positive impact in the legal community.
+              </p>
+            </motion.div>
+            <motion.div
+              variants={fadeIn}
+              className="relative"
+            >
+              <img
+                src={mauadabout}
+                alt="Law Firm"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black opacity-50 rounded-lg"></div>
+            </motion.div>
+          </div>
+        </motion.section>
+        <motion.section
           initial="initial"
           animate="animate"
           variants={staggerChildren}
           className="mb-16"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <motion.div 
+            <motion.div
               variants={fadeIn}
               className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg p-6 rounded-lg shadow-lg"
             >
@@ -60,13 +93,13 @@ export default function AboutPage() {
                 Our Mission
               </h2>
               <p className="text-lg mb-4">
-                At [Law Firm Name], our mission is to provide exceptional legal services with integrity, 
-                dedication, and a commitment to justice. We strive to be a beacon of hope for those seeking 
-                legal representation, ensuring that every client receives personalized attention and 
+                At [Law Firm Name], our mission is to provide exceptional legal services with integrity,
+                dedication, and a commitment to justice. We strive to be a beacon of hope for those seeking
+                legal representation, ensuring that every client receives personalized attention and
                 the highest quality legal counsel.
               </p>
             </motion.div>
-            <motion.div 
+            <motion.div
               variants={fadeIn}
               className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg p-6 rounded-lg shadow-lg"
             >
@@ -74,27 +107,27 @@ export default function AboutPage() {
                 Our Vision
               </h2>
               <p className="text-lg mb-4">
-                We envision a future where justice is accessible to all, regardless of background or 
-                circumstance. Our goal is to be at the forefront of legal innovation, continuously 
+                We envision a future where justice is accessible to all, regardless of background or
+                circumstance. Our goal is to be at the forefront of legal innovation, continuously
                 adapting to the evolving needs of our clients and the legal landscape.
               </p>
             </motion.div>
           </div>
         </motion.section>
 
-        <motion.section 
+        <motion.section
           initial="initial"
           animate="animate"
           variants={staggerChildren}
           className="mb-16"
         >
-          <motion.h2 
+          <motion.h2
             variants={fadeIn}
             className="text-3xl font-semibold mb-6 text-[#ffd05a]"
           >
             Our Values
           </motion.h2>
-          <motion.div 
+          <motion.div
             variants={fadeIn}
             className="grid grid-cols-1 md:grid-cols-3 gap-8"
           >
@@ -116,18 +149,18 @@ export default function AboutPage() {
           </motion.div>
         </motion.section>
 
-        <motion.section 
+        <motion.section
           initial="initial"
           animate="animate"
           variants={staggerChildren}
         >
-          <motion.h2 
+          <motion.h2
             variants={fadeIn}
             className="text-3xl font-semibold mb-6 text-[#ffd05a]"
           >
             Meet Our Attorneys
           </motion.h2>
-          <motion.div 
+          <motion.div
             variants={fadeIn}
             className="bg-white text-[#161618] p-6 rounded-lg"
           >
@@ -140,7 +173,7 @@ export default function AboutPage() {
             </Slider>
           </motion.div>
         </motion.section>
-      </main>
+      </section>
     </div>
   )
 }
