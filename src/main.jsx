@@ -8,6 +8,7 @@ import Contact from "./pages/Contact.jsx";
 import Services from "./pages/Services.jsx";
 import About from "./pages/About.jsx";
 import Home from "./pages/Home.jsx";
+import Attorneys from "./pages/Attorneys.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/attorneys",
+        element: <Attorneys />,
       },
     ],
   },

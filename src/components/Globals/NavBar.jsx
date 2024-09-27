@@ -9,7 +9,6 @@ import {
 } from "react-icons/fa";
 import { HiMenu, HiX } from "react-icons/hi";
 import Logo from "../../assets/logo.svg";
-import { ThemeToggle } from "./ThemeToggle";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +22,6 @@ export default function Navbar() {
             <div className="flex-shrink-0">
               <img className="h-12 w-auto" src={Logo} alt="Law Firm Logo" />
             </div>
-              <ThemeToggle />
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 <Link

@@ -3,7 +3,7 @@ import { ChevronRight } from "lucide-react"
 
 export default function ServicesPage() {
   return (
-    <section className="relative min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+    <section className="relative min-h-screenbg-gradient-to-b from-slate-950 to-zinc-800 text-white">
       <div
         className="absolute inset-0 -z-10 h-full w-full object-cover object-center opacity-20"
         style={{

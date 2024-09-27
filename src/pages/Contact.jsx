@@ -11,7 +11,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-slate-500 to-black flex items-center justify-center p-6">
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 to-zinc-800 flex items-center justify-center p-6">
       <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg p-8 max-w-4xl w-full">
         <h2 className="text-3xl font-bold text-white mb-6 text-center">Contact Our Attorneys</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
