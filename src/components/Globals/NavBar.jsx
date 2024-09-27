@@ -16,7 +16,7 @@ export default function Navbar() {
 
 
   return (
-    <nav className="bg-gradient-to-tl from-[#ffd05a] to-[#ffed84] bg-opacity-30 backdrop-filter backdrop-blur-lg text-slate-950">
+    <nav className="bg-gradient-to-r from-[#ece1b4] to-[#C2A82F] bg-opacity-30 backdrop-filter backdrop-blur-lg text-slate-950">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -49,6 +49,12 @@ export default function Navbar() {
                   className="px-3 py-2 rounded-md text-sm font-medium hover:bg-slate-950 hover:text-amber-300"
                 >
                   About Us
+                </Link>
+                <Link
+                  to="/contact"
+                  className="px-3 py-2 rounded-md text-sm font-medium hover:bg-slate-950 hover:text-amber-300"
+                >
+                  Contact
                 </Link>
               </div>
             </div>

@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: 255, 255, 255;
-  --foreground: 0, 0, 0;
+  --background: 39, 39, 42; /* #27272a (zinc-800) */
+  --foreground: 255, 255, 255; /* #ffffff */
 }
 .dark {
   --background: 22, 22, 24; /* #161618 */

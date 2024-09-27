@@ -13,7 +13,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-900 text-white">
+    <footer className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
       <div className="flex-shrink-0 mb-10">
               <img className="h-8 w-auto" src={Logo} alt="Law Firm Logo" />
