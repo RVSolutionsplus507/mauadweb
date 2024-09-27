@@ -70,7 +70,7 @@ const Carousel = () => {
                     focusElementStyling={{ border: '2px solid #27272a' }}
                     autoRotateTime={3}
                     borderWidth={4}
-                    borderHexColor={'1c364f'}
+                    borderHexColor={'d97706'}
                     setFocusElement={setFocusElement}
                 />
             </div>
